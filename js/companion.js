@@ -48,7 +48,11 @@ $(document).ready(function () {
   }
 
   if(isInstalled() == false) {
-    //   $("body").text("App Not Installed");
+      $("body").html(
+          "<h1>Something went wrong with the PWA, <br>" +
+          "kindly install the app from your browser if you have not done so, <br>" +
+          "but if you have installed the app, please restart it!</h1>"
+          );
   }
 
 });
